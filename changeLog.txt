@@ -1,0 +1,45 @@
+v0.2
+
+* Pre-release version
+
+v0.3
+
+* Publication detail:
+       open on new page
+       detailed for different type of publications
+       read new parameters
+
+* added new parameter to read for loadPublication
+
+* search publication : new layout
+
+* added logos
+
+* added link to main page on the banner
+
+* created js and css library and moved third-part js and css, updated inlude
+
+* new handling of add publication
+
+* metrics:
+
+     ASI_overview
+     authors
+
+* fixed welcome page
+
+* fixed infouser
+
+* fixed multiselect issue with jquery
+
+* fixed a bug in the project assignment
+
+* new handling for the modification service
+
+* modified manifest to include bin and changeLog.txt
+
+* created utiliies in bin : cleaningAuthors.py to handle the longo issue
+
+* DB 2302: cleaned Flamini, Longo, added new entry
+
+

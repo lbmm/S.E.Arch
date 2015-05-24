@@ -1,0 +1,8 @@
+include README.txt
+include changeLog.txt
+recursive-include pubblicazioniASI/xtopdf *.py 
+recursive-include pubblicazioniASI/static *
+recursive-include pubblicazioniASI/js *
+recursive-include pubblicazioniASI/views  *
+recursive-include bin/*
+
