@@ -7,6 +7,11 @@
   $(function() {
     $( "#tabs" ).tabs();
 
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      active:false
+      });
+
   });
 
 
@@ -28,7 +33,7 @@
     % end
     <a href="{{link}}" target="_blank">{{!publication['title']}} </a>
      <br>
-    {{!publication['authors_to_show']}}
+      {{!publication['authors_to_show']}}
 
     <br>
 
@@ -124,17 +129,10 @@
 
     type: <i>{{publication['type']}}</i>
     <br>
-    <br>
-    % if len(publication.get('link', '')) > 1:
-    publication available also here:
-    <br>
-       % for pub_link in publication['link'][1:]:
-          <a href="{{!pub_link}}" target="_blank">{{!pub_link}} </a>
-          <br>
 
-       %end
-    %end
     <p>
+    <strong>Abstract</strong>
+    <br>
    {{!publication.get('abstract', '')}}
     </p>
 
@@ -150,6 +148,29 @@
     %end
 
     </p>
+
+
+
+
+   <br>
+    % if len(publication.get('link', '')) > 1:
+    <div id="accordion">
+
+    <h3>More information</h3>
+    <div>
+
+    publication available also here:
+    <br>
+       % for pub_link in publication['link'][1:]:
+          <a href="{{!pub_link}}" target="_blank">{{!pub_link}} </a>
+          <br>
+
+       %end
+
+    </div>
+    </div>
+    %end
+
 
 
   </div>

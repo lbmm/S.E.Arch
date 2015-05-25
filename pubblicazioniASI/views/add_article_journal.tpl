@@ -14,6 +14,15 @@ $(document).ready(function(){
        optGroupCollapsible:true
 
    } );
+
+     $("#contract_aj").multiselect().multiselectfilter( {
+
+       autoReset:true,
+       optGroupCollapsible:true
+
+   } );
+
+
 });
 
 
@@ -197,7 +206,7 @@ $(document).ready(function(){
         <tr>
            <td > Area/Category </td>
            <td>
-            <select id='projects_missions_aj' name="project_mission" style="width:370px"  >
+            <select id='projects_missions_aj' name="project_mission" style="width:370px"  multiple="multiple">
                %for p_m in utilities_values['projects_missions']:
                  <option value="{{p_m['name']}}">{{p_m['name']}}</option>
                % end
@@ -224,19 +233,17 @@ $(document).ready(function(){
         </tr>
 
         <tr>
-           <td > Contracts </td>
-
-          <td class="click">
-          select contracts:
-          <div class="hidden">
-            <select name="contracts"  multiple="multiple">
+          <td> Contracts </td>
+          <td>
+            <select name="contracts"  id="contract_aj" multiple="multiple" style="width:370px">
                %for c in utilities_values['contracts']:
-                 <option value="{{c['contract_id']}}">{{c['contract_id']}}-{{c['contract_name']}} </option>
+                 <option value="{{c['contract_id']}}" >{{c['contract_id']}}-{{c['contract_name']}} </option>
                % end
             </select>
-            </div>
           </td>
         </tr>
+
+
 
          <tr>
          <td colspan="2">

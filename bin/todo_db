@@ -1,0 +1,1 @@
+db.publications.update({journal:"Astronomy \& Astrophysics"}, {$set:{journal:"Astronomy & Astrophysics"}},  { multi: true })

@@ -14,6 +14,7 @@ import publicationDAO
 import sessionDAO
 import userDAO
 
+import config
 import project_missionDAO
 import projectDAO
 import contractDAO
@@ -28,7 +29,7 @@ import ASI_authors
 
 admin_app = bottle.Bottle()
 
-connection_string = ""
+connection_string = config.MONGODB_URI
 connection = pymongo.MongoClient(connection_string)
 database = connection.publicationASI
 

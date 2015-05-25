@@ -7,6 +7,7 @@ from datetime import datetime
 import pymongo
 import bottle
 
+import config
 import aggregationDAO
 import sessionDAO
 import userDAO
@@ -105,7 +106,7 @@ def present_overview():
 
 
 
-connection_string = ""
+connection_string = config.MONGODB_URI
 connection = pymongo.MongoClient(connection_string)
 database = connection.publicationASI
 

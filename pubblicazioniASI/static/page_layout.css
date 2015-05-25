@@ -6,7 +6,10 @@ body {
 	background-color:white;
 	padding-bottom:60px;
 	font-size:11px;
-        background: url('/static/images/Logo_SEARCh_tot.png') no-repeat left top, url('/static/images/Logo_Search.png ') no-repeat  right  10px top 0px/206px;
+    background: url('/static/images/SEARCH_logo.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px 40px;
+    background-position:0px 10px;
 	}
 h1 {
 	margin:0px 0px 15px 0px;
@@ -58,10 +61,7 @@ a:hover {background-color:#eee;}
     font-size:13px;
 	background-color:#c9c9c9;
 	}
-/* I've heard this called the "be nice to Opera 5" rule. Basically, it feeds correct 
-length values to user agents that exhibit the parsing error exploited above yet get 
-the CSS box model right and understand the CSS2 parent-child selector. ALWAYS include
-a "be nice to Opera 5" rule every time you use the Tantek Celik hack (above). */
+
 body>#Header {height:16px;}
 
 #Content {

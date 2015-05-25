@@ -4,6 +4,7 @@
 .ui-datepicker-calendar {
     display: none;
     }
+
 </style>
 
 

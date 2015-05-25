@@ -9,6 +9,7 @@ from datetime import datetime
 import pymongo
 import bottle
 
+import config
 import publicationDAO
 import temporaryPublicationDAO
 import sessionDAO
@@ -21,7 +22,7 @@ import constants as c
 
 temporary_app = bottle.Bottle()
 
-connection_string = ""
+connection_string = config.MONGODB_URI
 connection = pymongo.MongoClient(connection_string)
 database = connection.publicationASI
 

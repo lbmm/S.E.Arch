@@ -10,6 +10,7 @@ import pymongo
 import bottle
 
 
+import config
 import publicationDAO
 import sessionDAO
 import userDAO
@@ -32,7 +33,7 @@ app.mount('/admin/', admin_app)
 app.mount('/metrics', metric_app)
 #app.mount('/tmp_publications', temporary_app)
 
-connection_string = ""
+connection_string = config.MONGODB_URI
 connection = pymongo.MongoClient(connection_string)
 database = connection.publicationASI
 

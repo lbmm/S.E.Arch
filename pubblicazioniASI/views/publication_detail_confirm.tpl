@@ -132,6 +132,8 @@
        %end
     %end
     <p>
+   <strong>Abstract</strong>
+   <br>
    {{!publication.get('abstract', '')}}
     </p>
 

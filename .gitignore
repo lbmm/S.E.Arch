@@ -68,3 +68,4 @@ tmp/
 *.doc
 #virtual env
 venv-pub/
+config.py

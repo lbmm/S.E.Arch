@@ -40,17 +40,22 @@ $(function() {
 
 
 <div id="Header">
+<table width=98%>
+<tr>
 
-
-
-
-<a href="/overview"><b>S.E.ARCH.</b></a>
-
-
-
-% if username:
+  <td align="left">
+      <a href="/overview"><b>S.E.ARCH.</b></a>
+      % if username:
       <a href="/user_info"><i>Welcome {{username}}</i></a>
-%end
+      %end
+   </td>
+   <td align="right">
+      <a href="http://publications.asdc.asi.it/"><b>ASDC Bibliography Tool</b></a>
+
+
+  </td>
+  </tr>
+  </table>
    <br />
 </div>
 
