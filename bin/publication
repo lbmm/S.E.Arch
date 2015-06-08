@@ -1,5 +1,5 @@
 #!/bin/bash
 
-TMP_DIR='/Users/federicamoscato/pubblicazioni/S.E.Arch/tmp'
+TMP_DIR='/tmp'
 cd ../pubblicazioniASI
 python publication.py --dir $(pwd) --tmp $TMP_DIR
