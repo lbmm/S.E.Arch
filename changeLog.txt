@@ -1,6 +1,17 @@
-v0.2
+v0.4
 
-* Pre-release version
+* added configuration.py
+* multisearch for contracts available in the inserction form
+* added tag abstract into publication detail
+* added accordion for multiple links in publication details
+* added link to the ASDC Bibliography tool
+* new logo
+* removed unused files
+* Authors to show now is mandatory in the modification page for the administrator
+* updated overview page
+
+
+
 
 v0.3
 
@@ -41,5 +52,10 @@ v0.3
 * created utiliies in bin : cleaningAuthors.py to handle the longo issue
 
 * DB 2302: cleaned Flamini, Longo, added new entry
+
+v0.2
+
+* Pre-release version
+
 
 

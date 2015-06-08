@@ -103,6 +103,7 @@ $(document).ready(function(){
                % end
             </select>
 
+
           </td>
 
          </tr>
@@ -118,7 +119,7 @@ $(document).ready(function(){
 
            </td>
           <td class="error">
-            {{utilities_values['errors']['title']}}
+            {{utilities_values['errors']['authors_to_show_error']}}
          </td>
         </tr>
 
@@ -179,7 +180,7 @@ $(document).ready(function(){
             external URL
           </td>
           <td>
-             <textarea rows="1" cols="50"  name="link"> {{' '.join(publication.get('link', ''))}} </textarea>
+             <textarea rows="1" cols="50"  name="link"> {{''.join(publication.get('link', ''))}} </textarea>
           </td>
 
         </tr>

@@ -848,7 +848,7 @@ def process_update_publication():
 
     validate = validatePublications.ValidatePublications()
     try:
-        validate.validate_publication_form(form_values)
+        validate.validate_publication_update(form_values)
     except validatePublications.ValidationException as e:
         utilities_values = set_utilities_values_publication()
         utilities_values.update({'errors': validate.errors})

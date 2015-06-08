@@ -2,7 +2,7 @@
 %setdefault(is_admin, False)
 
 
-% include header_template.tpl css_array=[], js_array=['https://www.google.com/jsapi'], username=False
+% include header_template_overview.tpl css_array=[], js_array=['https://www.google.com/jsapi'], username=False
 
 <script type="text/javascript">
 
@@ -74,12 +74,13 @@
         }
         // end of histogram
 
+
+
 </script>
 
 
 <div id="Content">
-
-
+       <h2>Italian Space Agency integrated platform for scientific literature</h2>
        <div id="chart_div" align="left" ></div>
 
 </div>

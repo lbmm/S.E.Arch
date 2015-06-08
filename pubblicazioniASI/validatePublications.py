@@ -41,6 +41,7 @@ class ValidatePublications(object):
         self.errors['contract_id_error'] = ""
         self.errors['contract_name_error'] = ""
         self.errors['type_error'] = ""
+        self.errors['authors_to_show_error'] = ""
 
 
     def validate_signup(self, username, password, verify, email, start_date, end_date):
@@ -127,22 +128,27 @@ class ValidatePublications(object):
             raise ValidationException()
         if not kwargs['pub_date']:
             self.errors['start_date_error'] = "publication date mandatory"
-            print "here3"
             raise ValidationException()
         elif kwargs['pub_date']:
             try:
                 datetime.strptime(kwargs["pub_date"], c.SHORT_DATE_FORMAT)
             except ValueError as e:
                 self.errors['start_date_error'] = "invalid pub date"
-                print "here5"
                 raise ValidationException()
         if not kwargs['type']:
             self.errors['type_error'] = "Publication type mandatory"
-            print "here6"
         if kwargs["link"]:
             if not __URL_RE__.search(kwargs["link"]):
                 self.errors["link_error"] = "invalid link"
                 raise ValidationException()
+
+    def validate_publication_update(self, kwargs):
+
+        if not kwargs['authors_to_show']:
+            self.errors['authors_to_show_error'] = "Authors to show is mandatory"
+            raise ValidationException()
+
+        self.validate_publication_form(kwargs)
 
     def validate_add_generic_form(self, name_string, name=None):
         """

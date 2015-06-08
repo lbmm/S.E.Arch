@@ -19,6 +19,15 @@ h1 {
 	font-weight:900;
 	color:#ccc;
 	}
+h2 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:24px;
+	line-height:24px;
+	font-weight:900;
+	color:#ccc;
+	}
+
 p {
 	font:11px/20px verdana, arial, helvetica, sans-serif;
 	margin:0px 0px 16px 0px;
@@ -61,6 +70,8 @@ a:hover {background-color:#eee;}
     font-size:13px;
 	background-color:#c9c9c9;
 	}
+
+
 
 body>#Header {height:16px;}
 

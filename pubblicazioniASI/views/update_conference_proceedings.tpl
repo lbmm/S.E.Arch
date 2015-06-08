@@ -100,7 +100,9 @@ $(document).ready(function(){
                % end
             </select>
 
+
           </td>
+
 
          </tr>
 
@@ -115,7 +117,7 @@ $(document).ready(function(){
 
            </td>
           <td class="error">
-            {{utilities_values['errors']['title']}}
+            {{utilities_values['errors']['authors_to_show_error']}}
          </td>
         </tr>
 
@@ -178,7 +180,7 @@ $(document).ready(function(){
             external URL
           </td>
           <td>
-            <input type="url"  size="80" name="link" value="{{' '.join(publication.get('link', ''))}}">
+            <input type="url"  size="80" name="link" value="{{''.join(publication.get('link', ''))}}">
           </td>
           <td class="error">
 	    {{utilities_values['errors']['link_error']}}
